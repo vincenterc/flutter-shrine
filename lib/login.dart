@@ -44,14 +44,14 @@ class _LoginPageState extends State<LoginPage> {
             ),
             ButtonBar(
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   child: Text('Cancel'),
                   onPressed: () {
                     _usernameController.clear();
                     _passwordController.clear();
                   },
                 ),
-                RaisedButton(
+                ElevatedButton(
                   child: Text('NEXT'),
                   onPressed: () {
                     Navigator.pop(context);

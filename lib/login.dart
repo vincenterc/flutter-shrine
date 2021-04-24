@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
             ButtonBar(
               children: <Widget>[
                 TextButton(
-                  child: Text('Cancel'),
+                  child: Text('CANCEL'),
                   onPressed: () {
                     _usernameController.clear();
                     _passwordController.clear();

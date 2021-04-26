@@ -14,6 +14,7 @@ class ShrineApp extends StatelessWidget {
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
       theme: _kShrineTheme,
+      debugShowCheckedModeBanner: false,
     );
   }
 

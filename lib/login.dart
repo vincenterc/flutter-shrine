@@ -79,6 +79,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 ElevatedButton(
                   child: Text('NEXT'),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 8.0,
+                  ),
                   onPressed: () {
                     Navigator.pop(context);
                   },

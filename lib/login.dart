@@ -72,6 +72,11 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 TextButton(
                   child: Text('CANCEL'),
+                  style: TextButton.styleFrom(
+                    shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                    ),
+                  ),
                   onPressed: () {
                     _usernameController.clear();
                     _passwordController.clear();
@@ -81,6 +86,9 @@ class _LoginPageState extends State<LoginPage> {
                   child: Text('NEXT'),
                   style: ElevatedButton.styleFrom(
                     elevation: 8.0,
+                    shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                    ),
                   ),
                   onPressed: () {
                     Navigator.pop(context);

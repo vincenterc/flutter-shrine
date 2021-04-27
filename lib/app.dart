@@ -36,36 +36,30 @@ final ThemeData _kShrineTheme = _buildShrineTheme();
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
-    accentColor: kShrineBrown900,
-    primaryColor: kShrinePink100,
+    primaryColor: kShrinePurple,
+    accentColor: kShrinePurple,
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        primary: kShrineBrown900,
+        primary: kShrinePurple,
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        primary: kShrinePink100,
-        onPrimary: kShrineBrown900,
+        primary: kShrinePurple,
       ),
     ),
-    scaffoldBackgroundColor: kShrineBackgroundWhite,
-    cardColor: kShrineBackgroundWhite,
-    textSelectionTheme: TextSelectionThemeData(
-      selectionColor: kShrinePink100,
-    ),
-    errorColor: kShrineErrorRed,
+    scaffoldBackgroundColor: kShrineSurfaceWhite,
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
     primaryIconTheme: base.iconTheme.copyWith(
-      color: kShrineBrown900,
+      color: kShrineSurfaceWhite,
     ),
     inputDecorationTheme: InputDecorationTheme(
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
           width: 2.0,
-          color: kShrineBrown900,
+          color: kShrinePurple,
         ),
       ),
       border: CutCornersBorder(),
@@ -93,7 +87,5 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
       )
       .apply(
         fontFamily: 'Rubik',
-        displayColor: kShrineBrown900,
-        bodyColor: kShrineBrown900,
       );
 }
